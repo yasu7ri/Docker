@@ -46,7 +46,6 @@ docker build -t oracle-xe-11g:step1 .
 XXXXXXXX:~ xxxxxxx$ docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 oracle-xe-11g       step1               dd7f0404387f        11 days ago         2.9 GB
-centos              centos7             61b442687d68        9 weeks ago         196.6 MB
 ```
 Dockerコンテナの起動  
 `docker run -d -p 8089:8080 -p 1521:1521 --name oracle-xe-11g  oracle-xe-11g:step1`
