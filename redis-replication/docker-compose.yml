@@ -12,6 +12,8 @@ slave:
   extra_hosts:
     # Dockerのホストアドレス
     - "dockerhost:192.168.99.100"
+  links:
+    - master
 sentinel:
   build: sentinel
   ports:
