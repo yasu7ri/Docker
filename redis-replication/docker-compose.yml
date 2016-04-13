@@ -1,0 +1,21 @@
+master:
+  build: master
+  ports:
+    - 7001:6379
+  extra_hosts:
+    # Dockerのホストアドレス
+    - "dockerhost:192.168.99.100"
+slave:
+  build: slave
+  ports:
+    - 7002:6379
+  extra_hosts:
+    # Dockerのホストアドレス
+    - "dockerhost:192.168.99.100"
+sentinel:
+  build: sentinel
+  ports:
+    - 9001:6379
+  extra_hosts:
+    # Dockerのホストアドレス
+    - "dockerhost:192.168.99.100"
