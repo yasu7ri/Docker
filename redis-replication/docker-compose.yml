@@ -1,9 +1,15 @@
 master:
   build: master
   net: host
-slave:
-  build: slave
+slave1:
+  build: slave1
   net: host
-sentinel:
-  build: sentinel
+slave2:
+  build: slave2
+  net: host
+sentinel1:
+  build: sentinel1
+  net: host
+sentinel2:
+  build: sentinel2
   net: host
