@@ -10,7 +10,6 @@ Docker
 |              |   Redis   |              |   Redis   |             |
 |              |  Sentinel |              |  Sentinel |             |
 |              |           |              |           |             |
-|              |           |              |           |             |
 |              +-----------+              +-----------+             |
 |                port:9001                  port:9002               |
 |                    +                          +                   |
@@ -27,7 +26,6 @@ Docker
 | |  Redis    |             |  Redis    |             |  Redis    | |
 | |  Server   +-------------+  Server   +-------------+  Server   | |
 | |  (SLAVE2) | replication |  (MASTER) | replication |  (SLAVE1) | |
-| |           |             |           |             |           | |
 | +-----------+             +-----------+             +-----------+ |
 |   port:7003                 port:7001                 port:7002   |
 +-------------------------------------------------------------------+
