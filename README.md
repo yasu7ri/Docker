@@ -27,6 +27,8 @@ XXXXXXXX:~ xxxxxxx$
 ```sh
   function docker-machine-env(){
     if [ $# != 1 ]; then
+      eval $(docker-machine env default)
+    elif [ $1 = "show" ]; then
       echo $DOCKER_MACHINE_NAME
     else
       eval $(docker-machine env $1)
