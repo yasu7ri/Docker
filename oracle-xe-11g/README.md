@@ -65,7 +65,7 @@ password: oracle
 ```
 ## Oracle XE 11gへの接続情報
 ```
-hostname: localhost
+hostname: xxx.xxx.xxx.xxx<Dockerホストマシンのipアドレス>
 port: 1521
 sid: XE
 username: system
